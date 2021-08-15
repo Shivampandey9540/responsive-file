@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style2.css">
+    <title>project1</title>
+</head>
+<body>
+      <div class = "wrapper" >
+       <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+              
+            <li>
+              <a href="">Tacos</a>
+            </li>
+
+            <li>
+              <a href="">Beers</a>
+            </li>
+            <li>
+              <a href="">Wines</a>
+            </li>
+            <li>
+              <a href="">Desserts</a>
+            </li>
+            <li>
+              <a href="">Reservations</a>
+            </li>
+          </ul>
+       </nav>
+       
+        
+        <div class="main">
+  <header class ="hero">
+<h2>Terry's taco Joint</h2>
+            <p>Preety Good Tacos !</p>
+  </header>
+              
+            
+       
+            <div class = "cta cta1">
+                <h1>$1.99</h1>
+                <p class ="manu_item">Tacos</p>
+            </div>
+            <div class="cta cta2">
+                <h1>$3.99</h1>
+                <p class ="manu_item">kombucha</p>
+            </div>
+
+
+        </div>
+       <Section  class ="features">
+           <div class ="feature"> 
+               <span class = "icon"> 🥣 </span>
+               <h3>Supee</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, adipisci accusantium. Iusto.</p>
+           </div>
+           <div class ="feature"> 
+               <span class = "icon">🍔  </span>
+               <h3>Beer</h3>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio libero sapiente animi.</p>
+           </div>
+           <div class ="feature"> 
+               <span class = "icon"> 🍟 </span>
+               <h3>Wine</h3>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio libero sapiente animi.</p>
+           </div>
+           <div class ="feature"> 
+               <span class = "icon"> 🍌 </span>
+               <h3>Music</h3>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio libero sapiente animi.</p>
+           </div>
+       </Section>
+       <section class = "about">
+           <div class  = " imgzoomeffect">
+               <img src="./queso-taco.png" alt="" class = "about_mokup" >
+           </div>
+           
+           <div class="about__details">
+               <h2>Featured Taco</h2>
+               <p>Slim  profile, easy to hold and loaded with cheese</p> 
+               <p> This is the one you have waiting</p>
+                <button>Learn More</button>
+           </div>
+
+       </section>
+
+       <section class="gallary">
+        <h2 class = "Instant">Instant Grams</h2> 
+       <div class = "imgzoomeffect"> <img src="https://source.unsplash.com/random/201x201" alt=""></div>
+       <div class = "imgzoomeffect">
+               <img src="https://source.unsplash.com/random/202x202" alt="">       
+       </div> 
+       <div class = "imgzoomeffect">
+               <img src="https://source.unsplash.com/random/203x203" alt="">       
+       </div> 
+       <div class = "imgzoomeffect">
+               <img src="https://source.unsplash.com/random/204x204" alt="">       
+       </div> 
+       <div class = "imgzoomeffect">
+               <img src="https://source.unsplash.com/random/205x205" alt="">       
+       </div> 
+       <div class = "imgzoomeffect">
+               <img src="https://source.unsplash.com/random/206x206" alt="">       
+       </div> 
+       <div class = "imgzoomeffect">
+               <img src="https://source.unsplash.com/random/207x207" alt="">       
+       </div> 
+       <div class = "imgzoomeffect">
+              <img src="https://source.unsplash.com/random/207x208" alt="">       
+       </div> 
+       <div class = "imgzoomeffect">
+              <img src="https://source.unsplash.com/random/207x209" alt="">       
+       </div> 
+      <div class = "imgzoomeffect">
+              <img src="https://source.unsplash.com/random/207x210" alt=" ">      
+      </div>  
+    
+       </section>
+      
+<script>
+   const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+    
+</script>
+<section  class = "footer"></section>
+      </div> 
+      
+</body>
+</html>
